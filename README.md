@@ -1,7 +1,7 @@
 Rust Functions Runtime aka CF Worker/AWS Functions clone
 
 Features:
-- JS and TypeScript functions stored as separate files in ./js
+- JS and TS functions stored as separate files in ./js
 - automatic loading on startup
 - HTTP proxy layer
 - idle server waiting for requests
