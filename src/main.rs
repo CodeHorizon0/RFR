@@ -1,6 +1,6 @@
 mod runtime;
-mod worker;
 mod server;
+mod worker;
 
 use runtime::FunctionsRuntime;
 use std::path::PathBuf;
@@ -8,10 +8,7 @@ use std::path::PathBuf;
 #[tokio::main]
 async fn main() -> anyhow::Result<()> {
     let runtime = FunctionsRuntime::new();
-
-    runtime.load_directory(PathBuf::from("./js")).await?;
-
+    runtime.load_directory(PathBuf::from("./functions")).await?;
     server::start(runtime).await?;
-
     Ok(())
 }
