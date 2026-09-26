@@ -22,4 +22,4 @@ TypeScript :
 GET http://localhost:8080/functions/typed
 
 ## Syntax
-Doesn't support standard CF Workers syntax, needs rewrite.
+Doesn't support full standard CF Workers syntax, needs rewrite.
